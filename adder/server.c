@@ -30,12 +30,12 @@ main(int argc, char *argv[])
     }
     printf("Master socket created\n");
 
-    memset(&name, 0, sizeof(struct sockaddr_un));
+    memset(&name, 0, sizeof(name));
     name.sun_family = AF_UNIX;
     strncpy(name.sun_path, SOCKET_NAME, sizeof(name.sun_path) - 1);
 
     ret = bind(connection_socket, (const struct sockaddr *) &name,
-               sizeof(struct sockaddr_un));
+               sizeof(name));
     if (ret == -1) {
         perror("bind");
         exit(EXIT_FAILURE);

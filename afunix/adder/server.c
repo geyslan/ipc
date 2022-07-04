@@ -99,5 +99,5 @@ main(int argc, char *argv[])
     close(connection_socket);
     printf("Connection closed\n");
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }

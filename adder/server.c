@@ -6,7 +6,7 @@
 #include <sys/un.h>
 #include <unistd.h>
 
-#define SOCKET_NAME "/tmp/srv-socket"
+#define SOCKET_NAME "/tmp/adder-socket"
 #define CLIENT_QUEUE 20
 #define BUFFER_SIZE 128
 

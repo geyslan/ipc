@@ -1,10 +1,10 @@
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <unistd.h>
-#include <errno.h>
 
 #define SOCKET_NAME "/tmp/srv-socket"
 #define CLIENT_QUEUE 20
